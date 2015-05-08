@@ -1,0 +1,105 @@
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Quicksand Light'), local('Quicksand-Light'), url(../font/quicksand_thin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(../font/quicksand_regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(../font/quicksand_bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}	
+
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+body, html {
+	background: #ecf0f1;
+	color: #333; 
+	position: relative;
+}
+
+body {
+	width: 500px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+button {
+	font-size: 1.5em;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	background: #e74c3c;
+	color: #FFF;
+	margin: 10px;	
+	width: 100%;
+}
+
+button.disabled {
+	background: #bdc3c7; 
+}
+
+ul {
+	list-style: none;
+	font-size: 1.7em;
+	margin: 0; padding: 0;
+}
+
+li {
+	color: #CCC;
+	background: none;
+	padding: 10px;
+	padding-top: 5px; padding-bottom: 5px;
+}
+
+li.active {
+	color: #FFF;
+	background: #f2ca27;
+}
+
+li.active:nth-child(even):before, li.active:nth-child(odd):before {
+	color: #FFF;
+}
+
+li:nth-child(even):before {
+	content: "You: ";
+	font-weight: 700;
+	color: #999;
+}
+
+li:nth-child(odd):before {
+	content: "Sara: ";
+	font-weight: 700;
+	color: #999;
+}
+
+.status {
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+#said {
+	font-weight: 300;
+}
+
+.error {
+	color: #F00;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 20px;
+}
